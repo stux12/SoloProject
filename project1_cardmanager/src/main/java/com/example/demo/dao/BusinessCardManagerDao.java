@@ -49,7 +49,7 @@ public class BusinessCardManagerDao {
 
 			businessCard.setName(rs.getString("name"));
 			businessCard.setPhone(rs.getString("phone"));
-			businessCard.setName(rs.getString("companyName"));
+			businessCard.setCompanyName(rs.getString("companyName"));
 			businessCard.setCreateDate(rs.getDate("createDate"));
 
 			list.add(businessCard);
