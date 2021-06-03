@@ -16,7 +16,7 @@
     </head>
     <body>
 
-        <div class="guestbooks"></div>
+        <div class="guestbooks">
             <c:forEach var="guestbook" items="${list}">
                 <div class="guestbook">
                     <div> <label>id : </label> ${guestbook.id}</div>
@@ -30,9 +30,8 @@
         <br><br><br>
 
         <form method="post" action="guestbooks/write">
-            이름 : <input type="tex" name="name"><br>
-            내용 :
-            <textarea name="content" cols="50" rows="5"></textarea><br>
+            이름 : <input type="text" name="name"><br>
+            내용 : <textarea name="content" cols="50" rows="5"></textarea><br>
             <input type="submit" value="확인">
         </form>
     </body>
